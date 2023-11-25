@@ -1,0 +1,1 @@
+This projects contains links to diagrams representing different wen infrastructres. The goal is to understand, on a very high-level , how web infrastructures are orgonized and what are their components.
