@@ -37,14 +37,14 @@ frontend  amalia8029-frontend-http
         bind *:80
         mode http
 	http-request set-header X-Forwarded-Proto http
-        default_backend ehoneah-backend
+        default_backend amalia8029-backend
 
 frontend amalia8029-frontend-https
-	bind *:443 ssl crt /etc/haproxy/certs/www.ehoneah.tech.pem
+	bind *:443 ssl crt /etc/haproxy/certs/www.amalia8029.tech.pem
 	http-request set-header X-Forwarded-Proto https
-	default_backend ehoneah-backend
+	default_backend amalia8029-backend
 
 backend amalia8029-backend
         balance roundrobin
-        server 63210-web-01 100.25.19.204:80 check
-        server 63210-web-02 54.157.159.85:80 check
+        server 421135-web-01 100.25.169.150:80 check
+        server 421135-web-02 54.157.174.53:80 check
